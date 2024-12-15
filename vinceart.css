@@ -1,0 +1,21 @@
+img {
+    width: 100%; /* Make image responsive, adjusts to container width */
+    max-width: 600px; /* Set a max width for the image */
+    height: auto; /* Maintain the aspect ratio */
+    border-radius: 15px; /* Add rounded corners to the image */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle shadow for depth */
+    margin: 20px auto; /* Add margin around the image and center it */
+    display: block; /* Ensure the image is a block element (so it can be centered) */
+}
+
+/* Style for a container that holds the image */
+.image-container {
+    text-align: center; /* Center the content */
+    padding: 10px; /* Add padding around the container */
+}
+
+/* Hover effect for the image */
+img:hover {
+    transform: scale(1.05); /* Slightly enlarge the image when hovered */
+    transition: transform 0.3s ease; /* Smooth transition effect */
+}
