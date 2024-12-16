@@ -4,20 +4,26 @@ document.addEventListener('DOMContentLoaded', () => {
   const nextBtn = document.querySelector('.next-btn');
   const bgMusic = document.getElementById('bgMusic');
   const musicToggle = document.getElementById('musicToggle');
+  let bgMusicOnOff = 0;
 
   bgMusic.load();
   bgMusic.volume = 0.1;
   bgMusic.currentTime = 450;
 
+  bgMusic.play()
+  bgMusicOnOff = 1;
+
+
   function toggleMusic() {
-    if (bgMusic.paused) {
-      bgMusic.play();
-      musicToggle.textContent = '🔊';
-      musicToggle.classList.remove('muted');
-    } else {
+    if (bgMusicOnOff == 1) {
       bgMusic.pause();
       musicToggle.textContent = '🔈';
-      musicToggle.classList.add('muted');
+      bgMusicOnOff = 0;
+    } 
+    else if (bgMusicOnOff == 0){
+      bgMusic.play();
+      musicToggle.textContent = '🔊';
+      bgMusicOnOff = 1;
     }
   }
 
