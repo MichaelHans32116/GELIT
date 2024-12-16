@@ -5,73 +5,81 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>The Other Side of The World</title>
   <link rel="stylesheet" href="Profile.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
+  <audio id="bgMusic" loop>
+    <source src="bg music/bg-music.mp3" type="audio/mpeg">
+  </audio>
+  <button id="musicToggle" class="music-btn">
+    🔈
+  </button>
   <header>
     <h1>The Other Side of The World</h1>
   </header>
-  <div class="container">
-    <div class="profile-container">
-      <div class="profile-box">
-        <img src="Pictures/hans.jpg" alt="Michael Hans Magbojos">
-        <p>Michael Hans Magbojos</p>
-      </div>
-      <div class="profile-box">
-        <img src="Pictures/alex.jpg" alt="Alex Bumatay">
-        <p>Alex Bumatay</p>
-      </div>
-      <div class="profile-box">
-        <a href="JazricForteArt.html" target="_blank"><img src="Pictures/God save us.jpg" alt="Jazric Forte">
-        </a>
-        <p>Jazric Forte</p>
-      </div>
-      <div class="profile-box">
-        <img src="Pictures/miro.jpg" alt="Miro Gonzales">
-        <p>Miro Gonzales</p>
+  <main class="container">
+    <button class="nav-btn prev-btn">←</button>
+    <button class="nav-btn next-btn">→</button>
+    <div class="slider-container">
+      <div class="grid">
+        <div class="profile-card">
+          <img src="Pictures/hans.jpg" alt="Michael Hans Magbojos">
+          <h2>Michael Hans Magbojos</h2>
+        </div>
+        <div class="profile-card">
+          <img src="Pictures/alex.jpg" alt="Alex Bumatay">
+          <h2>Alex Bumatay</h2>
+        </div>
+        <div class="profile-card">
+          <a href="JazricForteArt.html" target="_blank">
+            <img src="Pictures/God save us.jpg" alt="Jazric Forte">
+            <h2>Jazric Forte</h2>
+          </a>
+        </div>
+        <div class="profile-card">
+          <img src="Pictures/miro.jpg" alt="Miro Gonzales">
+          <h2>Miro Gonzales</h2>
+        </div>
+        <div class="profile-card">
+          <img src="placeholder.png" alt="John Kiel Kondo">
+          <h2>John Kiel Kondo</h2>
+        </div>
+        <div class="profile-card">
+          <a href="lexter.html" target="_blank">
+            <img src="Pictures/lexter.jpg" alt="Lexter Limbaga"></a>
+          <h2>Lexter Limbaga</h2>
+        </div>
+        <div class="profile-card">
+          <a href="rob.html">
+            <img src="Pictures/rob.jpg" alt="Rob Kjielle Mabilangan">
+            <h2>Rob Kjelle Mabilangan</h2>
+          </a>
+        </div>
+        <div class="profile-card">
+          <a href="rhenzies.html" target="_blank">
+            <img src="Pictures/rhenzies.jpg" alt="Rhenzies Manipol">
+            <h2>Rhenzies Manipol</h2>
+          </a>
+        </div>
+        <div class="profile-card">
+          <a href="vinceart.html" target="_blank">
+          <img src="Pictures/sean.jpg" alt="Sean Vincent Masungsong">
+          </a>
+          <h2>Sean Vincent Masungsong</h2>
+        </div>
+        <div class="profile-card">
+          <img src="Pictures/June.jpg" alt="June Platon">
+          <h2>June Platon</h2>
+        </div>
+        <div class="profile-card">
+          <a href="Artwork.html">
+            <img src="Pictures/Lio.jpg" alt="Lio Apiado">
+            <h2>John Lio L. Apiado</h2>
+          </a>
+        </div>
       </div>
     </div>
-    <div class="profile-container">
-      <div class="profile-box">
-        <img src="placeholder.png" alt="John Kiel Kondo">
-        <p>John Kiel Kondo</p>
-      </div>
-      <div class="profile-box">
-        <a href="lexter.html" target="_blank">
-        <img src="Pictures/lexter.jpg" alt="Lexter Limbaga"></a>
-        <p>Lexter Limbaga</p>
-      </div>
-      <div class="profile-box">
-        <a href="rob.html">
-        <img src="Pictures/rob.jpg" alt="Rob Kjielle Mabilangan">
-        </a>
-        <p>Rob Kjielle Mabilangan</p>
-      </div>
-      <div class="profile-box">
-        <a href="rhenzies.html" target="_blank">
-        <img src="Pictures/rhenzies.jpg" alt="Rhenzies Manipol"></a>
-        <p>Rhenzies Manipol</p>
-      </div>
-    </div>
-    <div class="profile-container">
-      <div class="profile-box">
-        <a href="vinceart.html" target="_blank">
-        </a>
-        <img src="Pictures/sean.jpg" alt="Sean Vincent Masungsong">
-        <p>Sean Vincent Masungsong</p>
-      </div>
-      <div class="profile-box">
-        <img src="placeholder.png" alt="June Platon">
-        <p>June Platon</p>
-      </div>
-    </div>
-    <div class="profile-container">
-      <div class="profile-box">
-        <a href="file:///C:/Users/63945/Desktop/Artwork/ArtworkLio.html">
-        <img src="Pictures/Lio.jpg" alt="Lio Apiado"> </a>
-        <p>John Lio L. Apiado</p>
-      </div>
-    </div>
-  </div>
+  </main>
+  <script src="Profile.js"></script>
 </body>
 </html>
-
