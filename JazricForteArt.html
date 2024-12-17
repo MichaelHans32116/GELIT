@@ -76,13 +76,13 @@
     <div class = "From">
         By: Jazric Forte From BSIT-2A
     </div>
-    <audio id="bgMusic" loop>
-        <source src="bg music/bg-music.mp3" type="audio/mpeg">
+    <audio id="bgMusic" loop autoplay>
+        <source src="bg music/shizukou loading Bgm.mp3" type="audio/mpeg">
     </audio>
     <script>
         const bgMusic = document.getElementById('bgMusic');
         bgMusic.load();
-        bgMusic.volume = 0.1;
+        bgMusic.volume = 1;
         bgMusic.currentTime = 450;
 
         bgMusic.play()
