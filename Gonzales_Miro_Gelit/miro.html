@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A World of Possibilities</title>
+  <link rel="stylesheet" href="MiroPoem.css">
+</head>
+<body>
+
+  <audio id="bgm" loop>
+    <source src="calm-piano.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <div class="music-controls">
+    <button id="musicToggle">Play Music</button>
+  </div>
+
+  <header class="hero">
+    <div class="overlay">
+      <h1>A World of Possibilities</h1>
+      <p class="subtitle">A vision of hope and harmony</p>
+    </div>
+  </header>
+
+  <section class="artwork">
+    <img src="PosterMiro.jpg" alt="Hopeful Skies" />
+  </section>
+
+  <!-- Poem -->
+  <main>
+    <section class="poem">
+      <p>In a world where spirits soar,<br>
+        There will be no chains of indecency forevermore.<br>
+        A different vision of painted hues,<br>
+        Where every soul seeks a peace of balance, true.</p>
+
+      <p>A symphonic and hopeful sound,<br>
+        Represents the heart, where dreams are found.<br>
+        Where all the love comes to sing,<br>
+        On sacred grounds, where hope takes wing.</p>
+
+      <p>No walls shall break the boundaries wide,<br>
+        Of judgment cast or love denied.<br>
+        For in this place, compassion reigns,<br>
+        A refuge built from joy, not pain.</p>
+
+      <p>So let's dream a world renewed in light,<br>
+        Where empathy blooms, erasing the night.<br>
+        A garden of care, both strong and true,<br>
+        That binds together me and you.</p>
+
+      <p>A tapestry woven of vibrant threads,<br>
+        Where courage and kindness are widespread.<br>
+        No shadows linger, no fear takes hold,<br>
+        A future of promise, bright and bold.</p>
+
+      <p>The stars above will softly glow,<br>
+        Guiding paths where dreams will grow.<br>
+        United hearts in harmony sing,<br>
+        A melody carried on endless wings.</p>
+
+      <p>Let us build this world with every hand,<br>
+        A sacred and cherished promised land.<br>
+        Where hope ignites the darkest skies,<br>
+        And love forever fills our lives.</p>
+    </section>
+  </main>
+
+  <!-- Back Button -->
+  <footer>
+    <button onclick="history.back()">Back</button>
+  </footer>
+
+  <script>
+    const bgm = document.getElementById('bgm');
+    const musicToggle = document.getElementById('musicToggle');
+
+    musicToggle.addEventListener('click', () => {
+      if (bgm.paused) {
+        bgm.play();
+        musicToggle.textContent = 'Pause Music';
+      } else {
+        bgm.pause();
+        musicToggle.textContent = 'Play Music';
+      }
+    });
+  </script>
+</body>
+</html>
