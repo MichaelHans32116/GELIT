@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bright Night</title>
+    <link rel="stylesheet" href="Hans.css">
+</head>
+<body>
+
+    <audio id="bgMusic" autoplay loop>
+        <source src="Phyrnna - A Stroll Through Nostalgia (Ending Version).mp3" type="audio/mpeg">
+    </audio>
+    
+    <a href="Profile.html" class="back-button">⭐ Back</a>
+
+    <h1>Bright Night</h1>
+
+    <div class="profile-card">
+        <div class="image-container">
+            <div class="button-container">
+                <button class="rotate-button" onclick="rotateImage()">Rotate</button>
+            </div>
+            <img src="bright night.jpg" alt="Bright Night Image" id="picture">
+        </div>
+        <div class="poem-container">
+            <p id="ninja">
+                A bright light, a sunny day, <br>
+                A starry glow in twilight's bay. <br>
+                Some adore the day's embrace, <br>
+                Others enjoy the nightlight's grace. <br><br>
+                
+                Choices made by hearts, we see, <br>
+                Who to love, and who to be. <br>
+                Kindness shared or cold disdain, <br>
+                Paths we make, joy or pain. <br> <br>
+                
+                Maybe beyond this world we know,<br>
+                A bright night shines, a peaceful glow,<br>
+                Where love transcends all hue or sight,<br>
+                No black or white, the purest sight.<br><br>
+                
+                No yellow, purple, none divide,<br>
+                Love is standing side by side.<br>
+                A bond untouched by hate or pride,<br>
+                United souls on judgless lands.<br><br>
+
+                No heavy gate of grief or hate,<br>
+                The darkness fades, and hope takes flight,<br>
+                A brighter world, a shining night.<br><br>
+
+                Fingers rise to place the blame,<br>
+                While voices drown the silent names.<br>
+                Still I dream this truth can rise,<br>
+                Beyond the dark, where hope survives.<br><br>
+            </p>
+        </div>
+    </div>
+
+    
+    <script>
+        let rotation = 0; // To keep track of the current rotation
+        let currentScrollY = 0; // To track scroll position
+    
+        const picture = document.getElementById("picture");
+        const imageContainer = document.querySelector(".image-container");
+        const scrollMultiplier = 0.76;
+    
+        let startScrollY = imageContainer.offsetTop; // Start scrolling when image enters the view
+        let maxScrollDistance = imageContainer.offsetHeight;
+    
+        function rotateImage() {
+            rotation += 180;
+    
+            // Update the rotation only, keep translateY intact
+            updateTransform(currentScrollY);
+            picture.style.transition = "transform 0.5s ease";
+        }
+    
+        window.addEventListener("scroll", function () {
+            currentScrollY = window.scrollY;
+    
+            if (currentScrollY >= startScrollY) {
+                // Calculate proportional scroll
+                let scrollDistance = (currentScrollY - startScrollY) * scrollMultiplier;
+    
+                // Clamp the scroll distance
+                scrollDistance = Math.min(scrollDistance, maxScrollDistance);
+                scrollDistance = Math.max(scrollDistance, 0);
+    
+                // Update transform with current scroll position
+                updateTransform(scrollDistance);
+            }
+        });
+    
+        // Function to combine rotation and scroll
+        function updateTransform(scrollDistance) {
+            // Flip direction if rotated 180 degrees
+            let adjustedScroll = (rotation % 360 === 180) ? -scrollDistance : scrollDistance;
+    
+            // Apply both rotation and translation
+            picture.style.transform = `rotate(${rotation}deg) translateY(${adjustedScroll}px)`;
+        }
+    </script>
+
+<div class="credits">
+    <p>By: Michael Hans G. Magbojos | BSIT-2a</p>
+    <p>Music: Phyrnna - A Stroll Through Nostalgia</p>
+</div>
+</body>
+</html>

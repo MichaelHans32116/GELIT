@@ -1,0 +1,147 @@
+body {
+    font-family: Helvetica, sans-serif;
+    color: antiquewhite;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+
+ 
+    background-image: url('bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+
+h1 {
+    position: absolute;
+    top: 35px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 3rem;
+    color: #ffd700;
+    text-shadow: 0 0 10px #ffd700, 0 0 20px #ffec8b, 0 0 30px #fff;
+    margin: 0;
+    text-align: center;
+}
+
+.profile-card {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 50px; 
+    max-width: 90%;
+    margin-top: 150px;
+}
+
+
+.image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px; /* Space between button and image */
+}
+
+.button-container {
+    margin-bottom: 10px; /* Adds space below the button */
+}
+
+/* Rotate Button Styling */
+.rotate-button {
+    font-size: 1.5rem; /* Bigger font size */
+    font-weight: bold; /* Make the font bold */
+    color: #fff;
+    background-color: #444;
+    border: none;
+    border-radius: 12px;
+    padding: 20px 50px;
+    cursor: pointer;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+    transition: transform 0.5s ease, box-shadow 0.5s ease, background-color 0.3s ease;
+}
+
+.rotate-button:hover {
+    background-color: #555; /* Slightly lighter background on hover */
+    transform: scale(1.2) rotate(5deg); /* Grow and slightly rotate */
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.5); /* Add a glowing effect */
+}
+
+/* Optional: Add a pulse effect */
+.rotate-button:active {
+    transform: scale(1.1) rotate(0deg);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+}
+
+/* Image Styling - Make it Smaller */
+.image-container img {
+    max-width: 600px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+    position: relative; /* Set relative positioning */
+    transition: transform 0.1s ease-out; /* Smooth transition */
+}
+
+
+/* Poem Styling - Widen Text */
+.poem-container {
+    flex: 1; /* Allow it to grow to fill space */
+    max-width: 500px; /* Widen poem text */
+    padding: 60px;
+    margin-left: 70px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    color: antiquewhite;
+    font-size: 1.4rem;
+    line-height: 1.8;
+    text-align: left;
+}
+
+/* Back Button Styling */
+.back-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    text-decoration: none;
+    color: #ffd700;
+    font-size: 1.2rem;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 8px 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.6);
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.back-button:hover {
+    background-color: rgba(255, 215, 0, 0.7);
+    transform: scale(1.1);
+}
+
+/* Credits Styling */
+.credits {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: #ffd700;
+    font-size: 1rem;
+    text-align: right;
+    font-style: italic;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 8px 12px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+    z-index: 1; /* Ensures it's above other content */
+}
