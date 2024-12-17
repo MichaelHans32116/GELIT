@@ -59,20 +59,19 @@
 
     
     <script>
-        let rotation = 0; // To keep track of the current rotation
-        let currentScrollY = 0; // To track scroll position
+        let rotation = 0; 
+        let currentScrollY = 0; 
     
         const picture = document.getElementById("picture");
         const imageContainer = document.querySelector(".image-container");
         const scrollMultiplier = 0.76;
     
-        let startScrollY = imageContainer.offsetTop; // Start scrolling when image enters the view
+        let startScrollY = imageContainer.offsetTop; 
         let maxScrollDistance = imageContainer.offsetHeight;
     
         function rotateImage() {
             rotation += 180;
     
-            // Update the rotation only, keep translateY intact
             updateTransform(currentScrollY);
             picture.style.transition = "transform 0.5s ease";
         }
@@ -81,28 +80,22 @@
             currentScrollY = window.scrollY;
     
             if (currentScrollY >= startScrollY) {
-                // Calculate proportional scroll
                 let scrollDistance = (currentScrollY - startScrollY) * scrollMultiplier;
     
-                // Clamp the scroll distance
                 scrollDistance = Math.min(scrollDistance, maxScrollDistance);
                 scrollDistance = Math.max(scrollDistance, 0);
     
-                // Update transform with current scroll position
+                
                 updateTransform(scrollDistance);
             }
         });
     
-        // Function to combine rotation and scroll
         function updateTransform(scrollDistance) {
-            // Flip direction if rotated 180 degrees
-            let adjustedScroll = (rotation % 360 === 180) ? -scrollDistance : scrollDistance;
-    
-            // Apply both rotation and translation
+         
+            let adjustedScroll = (rotation % 360 === 180) ? -scrollDistance : scrollDistance;         
             picture.style.transform = `rotate(${rotation}deg) translateY(${adjustedScroll}px)`;
         }
     </script>
-    
 
 <div class="credits">
     <p>By: Michael Hans G. Magbojos | BSIT-2a</p>
