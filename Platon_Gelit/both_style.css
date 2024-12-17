@@ -1,0 +1,61 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    flex-direction: column;
+}
+
+.moon {
+    width: 200px;
+    height: 200px;
+    background: radial-gradient(circle at 30% 30%, #ffffff, #d4d4d4 60%, #808080);
+    border-radius: 50%;
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.5);
+    margin-bottom: 20px; /* Added space between moon and title */
+}
+
+.title {
+    font-family: 'Press Start 2P', cursive;
+    color: #fafafa;
+    font-size: 30px;
+    margin-bottom: 20px; 
+    text-align: center;
+    position: absolute;
+    top: 250px;
+    left: 650px;
+}
+
+.title:hover {
+    transform: scale(1.1);
+    transition: transform 0.2s ease-in-out;
+    color: #000000;
+}
+
+.credit {
+    color: #ffffff;
+    font-family: 'VT323', monospace;
+    font-size: 1.5em;
+    text-align: center;
+    margin-top: 10px; 
+}
+
+.back-button {
+    background-color: #111;
+    color: white;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 15px;
+    padding: 10px 20px;
+    cursor: pointer;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+
+.back-button:hover {
+    color: #111;
+    background-color: #ffffff;
+}
+

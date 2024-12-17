@@ -1,0 +1,165 @@
+body {
+    background-color: #111;
+    color: #d0f1bf;
+    font-family: 'VT323', monospace;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.text-section {
+    max-width: 1000px;
+}
+
+.title {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 4.1em;
+    color: #8ea675;
+    margin: 0;
+    margin-left: 80px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.title:hover {
+    transform: scale(1.1);
+    transition: transform 0.2s ease-in-out;
+    color: #5f9fc6;
+    text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.8);
+    cursor: pointer;
+}
+
+.subtitle {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1em;
+    color: #ffffff;
+    margin: 0;
+    margin-bottom: 10px;
+    padding-top: 30px;
+    margin-left: 840px;
+    text-decoration: none;
+}
+
+.subtitle a {
+    text-decoration: none; 
+    color: #ffffff; 
+}
+
+.subtitle:hover {
+    transform: scale(1.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+.subtitle1 {
+    font-family: 'VT323', monospace;
+    font-size: 50px;
+    padding-left: 800px;
+    position: absolute;
+    top: -100px;
+    left: 600px;
+    color: #ffffff;
+}
+
+.description {
+    font-family: 'VT323', monospace;
+    font-size: 40px;
+    color: #a1a1a1;
+    text-align: justify;
+    line-height: 1.00;
+    margin-top: 20px;
+    margin-right: -20px;
+    padding-left: 80px;
+}
+
+.description:hover {
+    transform: scale(1.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+
+.highlight1 {
+    color: #8ea675;
+    text-decoration: underline;
+}
+
+.highlight1:hover {
+    cursor: pointer;
+}
+
+.highlight2 {
+    color: #5f9fc6;
+    text-decoration: underline;
+}
+
+.highlight3 {
+    color: #8ea675;
+    text-decoration: underline;
+}
+
+.highlight3:hover {
+    cursor: pointer;
+}
+
+.highlight4 {
+    color: #5f9fc6;
+}
+
+.highlight4:hover {
+    color: #8ea675;
+}
+
+.highlight5 {
+    color: #8ea675;
+}
+
+.highlight5:hover {
+    color:#5f9fc6;
+}
+
+.artwork {
+    width: 40%;
+    margin-left: 120px;
+}
+
+
+.credit {
+    position: absolute;
+    bottom: -50px;
+    right: 35px;
+    font-family: 'VT323', monospace;
+    font-size: 1.5em;
+    color: #ffffff;
+}
+
+.credit:hover {
+    color: #5f9fc6;
+
+}
+
+.back-button {
+    background-color: #000000;
+    color: #ffffff;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1em;
+    padding: 10px 20px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: -220px;
+    left: 30px;
+    cursor: pointer;
+}
+
+.back-button:hover {
+    background-color: #fcfcfc;
+    color: black;
+}
