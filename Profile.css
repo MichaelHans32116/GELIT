@@ -56,6 +56,7 @@ h1 {
 }
 
 .container {
+  margin-left: 50px;
   position: relative;
   max-width: 100%;
   padding: 0;
