@@ -10,6 +10,9 @@
 </head>
 
 <body>
+    <a href="Profile.html">
+        <button class = "backBtn" onclick = "">←</button>
+        </a>
     
     <p>In the land of Marijoa, a royal family held the highest status in the world. They lived a <br>
         prestigious life, seemingly untouched by worry. The people admired them for their kindness and <br>
@@ -137,9 +140,42 @@
            time in years, Lev and Shiro found joy and laughter once more.
     </p>
 
+    
+    <img src="Pictures/JazricForte_Art.png" alt="Nothing Differs">
+    <div class = "From">
+        By: Jazric Forte From BSIT-2A
+    </div>
+    <audio id="bgMusic" loop autoplay>
+        <source src="bg music/Lone Harvest_Lio.mp3" type="audio/mpeg">
+    </audio>
+    <script>
+        const bgMusic = document.getElementById('bgMusic');
+        bgMusic.load();
+        bgMusic.volume = 1;
+        bgMusic.currentTime = 450;
+
+        bgMusic.play()
+        bgMusicOnOff = 1;
+
+        function toggleMusic() {
+            if (bgMusicOnOff == 1) {
+            bgMusic.pause();
+            musicToggle.textContent = '🔈';
+            bgMusicOnOff = 0;
+            } 
+            else if (bgMusicOnOff == 0){
+            bgMusic.play();
+            musicToggle.textContent = '🔊';
+            bgMusicOnOff = 1;
+            }
+        }
+    </script>
+    <button id="musicToggle" class="music-btn" onclick = "toggleMusic()">🔊</button>
+
     <footer>
         The End
     </footer>
+
 
 </body>
 
