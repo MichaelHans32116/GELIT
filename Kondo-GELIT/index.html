@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kondo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <audio id="bgmusic" autoplay loop>
+    <source src="sound.mp3" type="audio/mpeg">
+  </audio>
+
+  <a href="Profile.html">
+    <button class = "back" onclick = "">Back</button>
+    </a>
+
+  <div class="container">
+    <img src="bg.png" alt="Background Image">
+    <div class="text">
+      <pre>
+        "Common Pulse"
+
+        In the landscape of human design, 
+        Where borders of difference confine, 
+        We draw harsh lines that cut and divide, 
+        Leaving compassion bruised and denied.
+      </pre>
+      <pre>
+        Beneath the skin, we’re all the same, 
+        Yet some still play the cruelest game. 
+        Drawing lines where none should be, 
+        Blinding hearts that long to see.
+      </pre>
+      <pre>
+        We fight and clash, we push and pull,
+        But love’s the thread that makes us whole.
+        In the end, it’s not the lines we see,
+        But the common pulse of humanity.
+
+        -John Kiel Kondo
+      </pre>
+    </div>
+    
+  <script>
+    
+    const textElements = document.querySelectorAll('.text p');
+    const container = document.querySelector('.container');
+
+    container.addEventListener('mouseleave', () => {
+      textElements.forEach((element) => {
+        element.style.animation = 'none';
+        element.offsetHeight; 
+        element.style.animation = 'typing 5s steps(100) 1s 1 normal both';
+      });
+    });
+  </script>
+
+</body>
+</html>
