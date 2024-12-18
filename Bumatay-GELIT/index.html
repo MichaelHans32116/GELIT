@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<a href="../index.html" class="back-to-main">
+    <i class="fas fa-home"></i>
+</a>
+
+<body>
+    <button id="prev-btn">
+        <i class="fas fa-arrow-circle-left"></i>
+    </button>
+
+
+    <div id="book" class="book">
+        <div id="p1" class="paper">
+            <div class="front">
+                <div id="f1" class="front-content">
+                </div>
+            </div>
+            <div class="back">
+                <div id="b1" class="back-content">
+                    <div class="quote">
+                        Respect the chapters, not just the cover.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="p2" class="paper">
+            <div class="front">
+                <div id="f2" class="front-content">
+                    A seed is small, but holds a tree,<br>
+                    A child may dream, and so shall be.<br>
+                    Their voices light, yet sharp and true,<br>
+                    Their ideas fresh, their wisdom new.<br>
+                    <br>
+                    An adult's path may seem unclear,<br>
+                    But time's not wasted, nor to fear.<br>
+                    A spark can rise when least they know,<br>
+                    And brilliance waits for chance to show.<br>
+                    <br>
+                    The aged hands that shake with grace,<br>
+                    Have built the world, each line a trace.<br>
+                    Their strength lives on, though time may wear,<br>
+                    Their stories speak—so stop, and care.<br>
+                    <br>
+                    We are all pages in time's great book,<br>
+                    Each age a chapter, take a look.<br>
+                    For young, for old, for those unseen,<br>
+                    Respect the story yet between.
+                </div>
+            </div>
+            <div class="back">
+                <div id="b2" class="back-content">
+                    A child may stumble, trip, and fall,<br>
+                    But don't mistake them weak or small.<br>
+                    Their minds are stars, alive and bright,<br>
+                    Unshaped by fear, alight with might.<br>
+                    <br>
+                    The questions they ask, the dreams they chase,<br>
+                    Are seeds of change, a future's place.<br>
+                    Don't silence their thoughts, don't call them naïve,<br>
+                    For the boldest wonders are born when they believe.
+                </div>
+            </div>
+        </div>
+        <div id="p3" class="paper">
+            <div class="front">
+                <div id="f3" class="front-content">
+                    The middle years, a silent climb,<br>
+                    A dance with doubt, a race with time.<br>
+                    The world may ask, "What have you done?"<br>
+                    But not all battles end in sun.<br>
+                    <br>
+                    Some paths are long, some sparks take time,<br>
+                    Not every hill is meant to climb.<br>
+                    Do not dismiss the quiet fight—<br>
+                    The unseen work that builds the light.
+                </div>
+            </div>
+            <div class="back">
+                <div id="b3" class="back-content">
+                    These wrinkled hands, they shaped the earth,<br>
+                    They've known both sorrow and of mirth.<br>
+                    Beneath the grey, the years are stored,<br>
+                    Each line a story, each heart adored.<br>
+                    <br>
+                    Don't call them weak, don't look away,<br>
+                    Their wisdom speaks of yesterday.<br>
+                    A bridge they are from past to now,<br>
+                    So listen close, and learn to bow.
+                </div>
+            </div>
+        </div>
+        <div id="p4" class="paper">
+            <div class="front">
+                <div id="f4" class="front-content">
+                    <div class="credits">
+                        All pictures, poems, and background in this part was purely made by Alex
+                    </div>
+                </div>
+            </div>
+            <div class="back">
+                <div id="b4" class="back-content">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <button id="next-btn">
+        <i class="fas fa-arrow-circle-right"></i>
+    </button>
+<audio id="flipSound1" preload="auto">
+    <source src="sound/coverflip1.mp3" type="audio/mpeg">
+</audio>
+<audio id="flipSound2" preload="auto">
+    <source src="sound/pageflip1.mp3" type="audio/mpeg">
+</audio>
+<audio id="flipSound3" preload="auto">
+    <source src="sound/pageflip2.mp3" type="audio/mpeg">
+</audio>
+<audio id="flipSound4" preload="auto">
+    <source src="sound/coverflip2.mp3" type="audio/mpeg">
+</audio>
+<audio id="backgroundMusic" loop preload="auto">
+    <source src="sound/bgm.mp3" type="audio/mpeg">
+</audio>
+
+<button id="muteButton">
+    <i class="fas fa-volume-up"></i>
+</button>
+    
+        <script src="main.js" defer></script>
+    </body>
+</html>
